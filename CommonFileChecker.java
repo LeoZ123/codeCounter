@@ -18,7 +18,6 @@ public class CommonFileChecker {
 		
 		boolean withinCommentBlock = false;
 		
-		//Read from file
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 		    String line;
 		    while ((line = reader.readLine()) != null) {

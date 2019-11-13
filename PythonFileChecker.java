@@ -23,7 +23,7 @@ public class PythonFileChecker {
 				
 				lineCount++;
 				
-				//remove Quotation content for special case, eg: "//this is not a comment"
+				//remove quotation content for special case, eg: "//this is not a comment"
 				String clearedLine = removeQuationContent(line);
 				
 				//Check if the line contains #

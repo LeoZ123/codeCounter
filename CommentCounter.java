@@ -12,9 +12,11 @@ public class CommentCounter {
 				
 		try {
 			if (isPythonFile){
+				//check by pound sign (#)
 				PythonFileChecker.pythonChecker(fileName);
 			} 
 			else{
+				//check by slash (// /**/)
 				CommonFileChecker.commonChecker(fileName);
 			}
 		} catch (IOException e) {
